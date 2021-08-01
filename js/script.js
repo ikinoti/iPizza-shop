@@ -120,4 +120,29 @@ $(document).ready(function () {
     $("#pickupOption").hide();
     $(".delivery").show();
   });
+
+  $("button#deliveryForm").click(function (event) {
+    event.preventDefault();
+    var userName = $("input#fullNameD").val();
+    var address = $("input#location").val();
+    $("#orderOutput").hide();
+    $("form#orderForm").hide();
+    $("form#deliveryForm").hide();
+    var myModal = new bootstrap.Modal(document.getElementById("modal"), {
+      backdrop: true,
+    });
+    if (userName && address) {
+      $("#modal-body").html(
+        " Hello " +
+          userName +
+          ", your order will be delivered to your location. Thank you for shopping on iPizza"
+      );
+      $("#modalLabel").html("Your Order has been successfully confirmed.");
+      myModal.show();
+    } else {
+      $("#modal-body").html("Please enter your name and address!!");
+      $("#modalLabel").html("Invalid input!");
+      myModal.show();
+    }
+  });
 });

@@ -78,4 +78,9 @@ $(document).ready(function () {
       });
     $("#orderForm")[0].reset();
   });
+
+  $("button#checkout").click(function () {
+    $("#orderChoice").hide();
+    $("#pickupOption").show();
+  });
 });

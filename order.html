@@ -11,6 +11,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <title>Order</title>
   </head>
   <body>
@@ -38,5 +43,54 @@
         </div>
       </div>
     </nav>
+
+    <!-- order Form -->
+    <div class="container">
+      <h1>Make Your Order Here</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="orderForm">
+            <div class="form-group">
+              <label for="pizzaSize">Select The Size you prefer:</label>
+              <select class="form-select" id="pizzaSize">
+                <option selected value="">Choose your size</option>
+                <option value="large">Large (@ 1100)</option>
+                <option value="medium">Medium (@ 880)</option>
+                <option value="small">Small (@ 600)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="pizzaCrust">Choose the crust you prefer:</label>
+              <select class="form-select" id="pizzaCrust">
+                <option selected value="">Choose Crust</option>
+                <option value="cheese">Cheese-stuffed Crust</option>
+                <option value="sicilian">Sicilian crust</option>
+                <option value="neapolitan">Neapolitan Crust</option>
+              </select>
+            </div>
+
+            <label for="pizzaTopping"
+              >Select Topping of your choice, each at 100 bob:</label
+            >
+            <div class="form-group topping">
+              <input type="checkbox" name="topItem" value="bacon" />Bacon
+              <input
+                type="checkbox"
+                name="topItem"
+                value="mushrooms"
+              />Mushrooms
+              <input type="checkbox" name="topItem" value="onions" />Onions
+              <input type="checkbox" name="topItem" value="sausage" />Sausage
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Place Your Order
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- row /div -->
+    </div>
+    <!-- container /div -->
   </body>
 </html>

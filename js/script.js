@@ -1,4 +1,10 @@
 // BUSSINESS LOGIC
+function Pizza(pizzaSize, pizzaCrust) {
+  this.pizzaSize = pizzaSize;
+  this.pizzaCrust = pizzaCrust;
+  this.toppings = [];
+  this.price = 0;
+}
 
 // USER INTERFACE LOGIC
 $(document).ready(function () {

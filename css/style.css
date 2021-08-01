@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
 body {
   background-image: url("../assets/pizza-3007395_1920.jpg");
   background-repeat: no-repeat;
@@ -5,4 +11,38 @@ body {
   background-position: center center;
   background-attachment: fixed;
   height: 100vh;
+}
+#navbar {
+  background-color: #ff3f00;
+}
+
+#showcase {
+  height: 100vh;
+  padding: 400px 0;
+}
+
+#about {
+  height: 50vh;
+  padding: 400px 0;
+  color: #faff00;
+  font-size: 24px;
+}
+
+#about p {
+  line-height: 80px;
+}
+
+#orderSection {
+  background-color: rgba(129, 0, 52, 0.5);
+}
+#orderOutput,
+#pickupOption,
+#orderChoice,
+.pickupNow,
+.delivery {
+  display: none;
+}
+#modal-body,
+#modalLabel {
+  color: #f96816;
 }

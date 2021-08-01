@@ -46,5 +46,36 @@ $(document).ready(function () {
     var pizzaCrust = $("#pizzaCrust").val();
     var pizzaSize = $("#pizzaSize").val();
     var newPizza = new Pizza(pizzaSize, pizzaCrust);
+
+    $("input:checkbox[name=topItem]:checked").each(function () {
+      var toppingChoice = $(this).val();
+      newPizza.toppings.push(toppingChoice);
+    });
+
+    newPizza.cost();
+    total += newPizza.price;
+
+    $(".totalAmount").text(total);
+    $("#orderOutput").show();
+    $("#cartHeader").show();
+    $("ol#orderList").append(
+      "<li><span class='cartItem'>" +
+        newPizza.pizzaSize +
+        " " +
+        newPizza.pizzaCrust +
+        " Pizza" +
+        "</span></li>"
+    );
+
+    $(".cartItem")
+      .last()
+      .click(function () {
+        $("#orderChoice").show();
+        $(".pizzaSize").text(newPizza.pizzaSize);
+        $(".pizzaCrust").text(newPizza.pizzaCrust);
+        $(".pizzaTopping").text(newPizza.toppingList());
+        $(".pizzaCost").text(newPizza.price);
+      });
+    $("#orderForm")[0].reset();
   });
 });

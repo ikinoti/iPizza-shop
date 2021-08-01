@@ -113,4 +113,11 @@ $(document).ready(function () {
       myModal.show();
     }
   });
+
+  $("button#deliveryPoint").click(function () {
+    total += 300;
+    $(".totalAmount").text(total);
+    $("#pickupOption").hide();
+    $(".delivery").show();
+  });
 });

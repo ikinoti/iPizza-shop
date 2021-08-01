@@ -88,4 +88,29 @@ $(document).ready(function () {
     $("#pickupOption").hide();
     $(".pickupPerson").show();
   });
+
+  $("button#pickupBtn").click(function (event) {
+    event.preventDefault();
+    var userName = $("input#personName").val();
+    // $(".name-input").text(userName);
+    $("form#pickupForm").hide();
+    $("#orderOutput").hide();
+    $("form#orderForm").hide();
+    var myModal = new bootstrap.Modal(document.getElementById("modal"), {
+      backdrop: true,
+    });
+    if (userName) {
+      $("#modal-body").html(
+        " Hello " +
+          userName +
+          ", Please pick your order at iPizza shop near you. Thank You"
+      );
+      $("#modalLabel").html("Order successfully confirmed");
+      myModal.show();
+    } else {
+      $("#modal-body").html("Please enter your name!!");
+      $("#modalLabel").html("Invalid input!");
+      myModal.show();
+    }
+  });
 });

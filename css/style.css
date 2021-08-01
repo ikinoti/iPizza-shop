@@ -20,7 +20,17 @@ body {
 #navbar {
   background-color: #ff3f00;
 }
+#logo {
+  font-family: "Amita", cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  color: rgb(224, 235, 70);
+}
 
+#navBtn {
+  font-size: 20px;
+  font-weight: bold;
+}
 #showcase {
   height: 100vh;
   padding: 400px 0;
@@ -39,7 +49,32 @@ body {
   font-weight: bolder;
   color: #faff00;
 }
-#showcase button a {
+#showcase button a,
+#navBtn a {
   color: whitesmoke;
   text-decoration: none;
+}
+
+#orderSection {
+  background-color: rgba(129, 0, 52, 0.9);
+}
+.cartItem {
+  color: #0088cc;
+  cursor: pointer;
+}
+
+.cartItem:hover {
+  color: #f96816;
+  font-weight: bold;
+}
+#orderOutput,
+#pickupOption,
+#orderChoice,
+.pickupPerson,
+.delivery {
+  display: none;
+}
+#modal-body,
+#modalLabel {
+  color: #f96816;
 }

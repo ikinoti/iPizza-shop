@@ -83,4 +83,9 @@ $(document).ready(function () {
     $("#orderChoice").hide();
     $("#pickupOption").show();
   });
+
+  $("button#pickupPoint").click(function () {
+    $("#pickupOption").hide();
+    $(".pickupPerson").show();
+  });
 });

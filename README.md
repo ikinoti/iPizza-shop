@@ -1,6 +1,6 @@
-# ipizza Shop!
+# iPizza Shop!
 
-[Check it out]()
+[iPizza-shop](https://ikinoti.github.io/iPizza-shop/)
 
 ## Description:
 

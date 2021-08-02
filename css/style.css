@@ -55,8 +55,10 @@ body {
   text-decoration: none;
 }
 
-#orderSection {
+#orderSec {
   background-color: rgba(129, 0, 52, 0.9);
+  margin-top: 100px;
+  padding: 40px;
 }
 .cartItem {
   color: #0088cc;

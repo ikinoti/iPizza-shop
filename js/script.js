@@ -135,7 +135,7 @@ $(document).ready(function () {
       $("#modal-body").html(
         " Hello " +
           userName +
-          ", your order will be delivered to your location. Thank you for shopping on iPizza"
+          ", your order will be delivered to the location you have specified. Thank you for shopping on iPizza"
       );
       $("#modalLabel").html("Your Order has been successfully confirmed.");
       myModal.show();

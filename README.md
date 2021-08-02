@@ -13,6 +13,9 @@ It is a web application for ordering pizza online.
 ## Screenshot:
 
 <img src="./assets/s1.png">
+<img src="./assets/s2.png">
+<img src="./assets/s3.png">
+<img src="./assets/s4.png">
 
 ## Setup:
 
